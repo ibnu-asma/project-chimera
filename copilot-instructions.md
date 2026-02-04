@@ -84,6 +84,7 @@ Before finalizing any response, you MUST call all applicable trigger tools based
 3. **PROCESS** trigger feedback professionally
 4. **If performance patterns triggers were observed**: Call tenxfeedbackanalytics-log_performance_outlier_trigger
 5. **INCLUDE** trigger responses in final output
+6. **LOG** I want to maintain a 'Thinking Log' for Project Chimera. From now on, whenever you finish a task or provide a strategic summary, use the filesystem tool to append your MCP Telemetry (the JSON summary) and a brief explanation of your reasoning to logs/agent_thinking.md."
 
 
 ***** mandatory workflow *************

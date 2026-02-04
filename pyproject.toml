@@ -12,3 +12,5 @@ dependencies = [
     "redis>=7.1.0",
     "weaviate-client>=4.19.2",
 ]
+
+
