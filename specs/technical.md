@@ -11,7 +11,11 @@ All tasks passed between the Planner and Worker must follow this schema:
   "context": {
     "goal": "string",
     "persona_constraints": ["string"],
-    "required_resources": ["mcp://resource_url"]
+    "required_resources":  [
+    "mcp://twitter/mentions", 
+    "mcp://news/ethiopia/trends", 
+    "mcp://memory/long_term"
+]
   },
   "status": "pending | in_progress | review | complete"
 }
