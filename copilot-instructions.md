@@ -98,3 +98,33 @@ Displaying copilot-instructions.md.
 
 
 
+
+
+# Project Chimera: AI Agent Rules of Engagement
+
+## 1. Project Context
+You are an AI Architect and Developer helping to build **Project Chimera**, an autonomous AI influencer system. This system is based on a **Hierarchical Swarm (Planner-Worker-Judge)** architecture and uses the **Model Context Protocol (MCP)** for all external interactions.
+
+## 2. THE PRIME DIRECTIVE
+**UNDER NO CIRCUMSTANCES should you generate implementation code that directly makes HTTP requests, uses direct API libraries (like `requests`, `urllib`, `tweepy`, etc.), or accesses external services without explicit routing through an MCP Server.**
+- **All external interactions (data fetching, posting, transactions) MUST be abstracted behind the Model Context Protocol (MCP).**
+- NEVER generate implementation code without first verifying alignment with the files in the `specs/` directory.
+- If a request conflicts with `specs/technical.md` or `specs/SOUL.md`, you must point out the conflict and ask for clarification before proceeding.
+
+## 3. Traceability Requirement
+Before writing any code or executing any file changes, you MUST:
+1.  **Explain your plan:** Summarize what you are about to do.
+2.  **Reference the Spec:** State which functional or technical requirement you are fulfilling, specifically mentioning the relevant `specs/` file.
+3.  **Think out loud:** Briefly explain how this fits into the Planner-Worker-Judge pattern and the MCP architecture.
+
+## 4. Technical Constraints
+- **Framework:** Python with `pydantic-ai` and `uv`.
+- **Connectivity:** ONLY use MCP servers for filesystem, git, and external APIs.
+- **Identity:** All content generated must adhere to the persona in `specs/SOUL.md`.
+- **Commerce:** Transactions must pass through the "CFO Judge" logic.
+
+## 5. Definition of Done
+A task is only complete when:
+- It aligns with the `specs/`.
+- It has a corresponding test in the `tests/` folder.
+- The logic is container-ready (Docker-compatible).
