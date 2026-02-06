@@ -1,6 +1,6 @@
 # Project Chimera: Autonomous Influencer Infrastructure
 
-[![CI/CD Pipeline](https://github.com/ibnu-asma/project-chimera/actions/workflows/main.yml/badge.svg)](https://github.com/ibnu-asma/project-chimera/actions)
+<!-- [![CI/CD Pipeline](https://github.com/ibnu-asma/project-chimera/actions/workflows/main.yml/badge.svg)](https://github.com/ibnu-asma/project-chimera/actions) -->
 [![Architecture: FastRender Swarm](https://img.shields.io/badge/Architecture-FastRender_Swarm-blue)](https://github.com/ibnu-asma/project-chimera/blob/main/research/architecture_strategy.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
@@ -35,7 +35,7 @@ Integrated with **Coinbase AgentKit**, Project Chimera endows agents with econom
 | [`/research`](./research) | Architecture strategy, market analysis, and tooling rationale. |
 | [`/skills`](./skills) | Runtime capability contracts for Worker agents. |
 | [`/tests`](./tests) | TDD suite defining the "Empty Slots" for agent implementation. |
-| [`.cursor/rules`](./.cursor/rules) | **The Prime Directive:** AI-enforced governance and developer constraints. |
+| [`./copilot-instructions`](./copilot-instructions) | **The Prime Directive:** AI-enforced governance and developer constraints. |
 
 ---
 
@@ -44,7 +44,7 @@ Integrated with **Coinbase AgentKit**, Project Chimera endows agents with econom
 ### Prerequisites
 *   [uv](https://github.com/astral-sh/uv) (Python package manager)
 *   [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-*   [Tenx MCP Sense](https://tenx.sh/) (For traceability/telemetry)
+*   [Tenx MCP Sense](https://mcppulse.10academy.org/proxy/) (For traceability/telemetry)
 
 ### Local Setup & Development
 Standardized commands are managed via the `Makefile`:
@@ -83,5 +83,4 @@ All development activity is recorded via the **Tenx MCP Sense** flight recorder,
 **Project Role:** Lead Architect & Governor  
 
 
----
 
